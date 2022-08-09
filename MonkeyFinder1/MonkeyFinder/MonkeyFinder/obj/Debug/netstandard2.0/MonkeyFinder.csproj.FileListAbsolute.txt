@@ -1,0 +1,16 @@
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\bin\Debug\netstandard2.0\MonkeyFinder.deps.json
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\bin\Debug\netstandard2.0\MonkeyFinder.dll
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\bin\Debug\netstandard2.0\ref\MonkeyFinder.dll
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\bin\Debug\netstandard2.0\MonkeyFinder.pdb
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\obj\Debug\netstandard2.0\MonkeyFinder.csproj.AssemblyReference.cache
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\obj\Debug\netstandard2.0\MonkeyFinder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\obj\Debug\netstandard2.0\MonkeyFinder.AssemblyInfoInputs.cache
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\obj\Debug\netstandard2.0\MonkeyFinder.AssemblyInfo.cs
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\obj\Debug\netstandard2.0\MonkeyFinder.csproj.CoreCompileInputs.cache
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\obj\Debug\netstandard2.0\MonkeyFinder.dll
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\obj\Debug\netstandard2.0\ref\MonkeyFinder.dll
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\obj\Debug\netstandard2.0\MonkeyFinder.pdb
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
+C:\Users\AThirukandathil\source\repos\MonkeyFinder\MonkeyFinder\MonkeyFinder\obj\Debug\netstandard2.0\View\DetailsPage.xaml.g.cs

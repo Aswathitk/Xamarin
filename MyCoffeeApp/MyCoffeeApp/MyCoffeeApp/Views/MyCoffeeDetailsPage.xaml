@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyCoffeeApp.Views.MyCoffeeDetailsPage"
+             xmlns:model="clr-namespace:MyCoffeeApp.Models"
+             x:DataType="model:Coffee"
+             BackgroundColor="{AppThemeBinding Dark=Black, Light=White}">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding Name, StringFormat='Name: {0}'}" FontSize="Large" />
+            <Label Text="{Binding Roaster, StringFormat='Roaster: {0}'}" FontSize="Large"/>
+            <Image HorizontalOptions="Center" Source="{Binding Image}"/>
+            <Button Text="OK" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

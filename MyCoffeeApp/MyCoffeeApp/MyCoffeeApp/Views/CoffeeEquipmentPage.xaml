@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyCoffeeApp.Views.CoffeeEquipmentPage"
+             xmlns:viewmodels="clr-namespace:MyCoffeeApp.ViewModels"
+             xmlns:mvvm="clr-namespace:MvvmHelpers;assembly=MvvmHelpers"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:model="clr-namespace:MyCoffeeApp.Models"
+             x:DataType="viewmodels:CoffeeEquipmentViewModel"
+             x:Name="CoffeePage"
+             BackgroundColor="{AppThemeBinding Dark=Black, Light=White}">
+    <ContentPage.BindingContext>
+        <viewmodels:CoffeeEquipmentViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xct:ItemSelectedEventArgsConverter x:Key="ItemSelectedEventArgsConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ListView CachingStrategy="RecycleElement"
+              SelectedItem="{Binding SelectedCoffee, Mode=TwoWay}"
+              ItemsSource="{Binding CoffeeGroups}"
+              IsGroupingEnabled="True"
+              GroupDisplayBinding="{Binding Key}"
+              HasUnevenRows="True"
+              SeparatorVisibility="None"
+              IsPullToRefreshEnabled="True"
+              IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+              RefreshCommand="{Binding RefreshCommand}"
+              RefreshControlColor="{StaticResource RefreshColor}">
+        <ListView.Behaviors>
+            <xct:EventToCommandBehavior
+                EventName="ItemSelected"
+            Command="{Binding SelectedCommand}" 
+                EventArgsConverter="{StaticResource ItemSelectedEventArgsConverter}"/>
+        </ListView.Behaviors>
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="model:Coffee">
+                <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem Text="Favourite" 
+                                  Command="{Binding 
+                            Source={x:Reference CoffeePage},
+                            Path=BindingContext.FavouriteCommand}"
+                                  CommandParameter="{Binding .}"/>
+                        <MenuItem Text="Delete"/>
+                    </ViewCell.ContextActions>
+                    <Grid Padding="10">
+                        <Frame CornerRadius="20"
+                               HasShadow="True">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Image}"
+                                       WidthRequest="66"/>
+                                <StackLayout>
+                                    <Label VerticalOptions="Center"
+                                           FontSize="Large"
+                                           Text="{Binding Name}"/>
+                                    <Label VerticalOptions="Center"
+                                           FontSize="Large"
+                                           Text="{Binding Roaster}"/>
+                                </StackLayout>
+                                <Button Text="Favourite" HorizontalOptions="End"
+                                        Command="{Binding Source={RelativeSource 
+                                        AncestorType={x:Type viewmodels:CoffeeEquipmentViewModel}},
+                                    Path= FavouriteCommand}"
+                                        CommandParameter="{Binding .}"/>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.Header>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Coffees of The World"
+                       FontSize="Caption"/>
+            </StackLayout>
+        </ListView.Header>
+        <ListView.Footer>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Show More" Command="{Binding LoadMoreCommand}"/>
+            </StackLayout>
+        </ListView.Footer>
+    </ListView>
+</ContentPage>

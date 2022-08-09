@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:MyCoffeeApp.ViewModels"
+             x:Class="MyCoffeeApp.Views.AddMyCoffeePage">
+    <ContentPage.BindingContext>
+        <viewmodels:AddMyCoffeeViewModel/>
+    </ContentPage.BindingContext>
+ 
+        <StackLayout>
+            <Label Text="Enter name of Coffee" FontSize="Large"/>
+            <Entry Text="{Binding Name}"/>
+            <Label Text="Enter Roaster" FontSize="Large"/>
+            <Entry Text="{Binding Roaster}"/>
+            <ActivityIndicator
+                HorizontalOptions="Center"
+                IsRunning="{Binding IsBusy}"
+                IsVisible="{Binding IsBusy}"
+                VerticalOptions="Center" />
+        <Button Text="Place Order" 
+                    Command="{Binding SaveCommand}"
+                    IsEnabled="{Binding IsNotBusy}"/>
+        </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "8D2jOyCUx2EdBFFhqBS07xg/61Z21VZFI6a8tEPR5lyUh7A1dc9Gdsw9fvLo9mEDLJPRMv8gXNGsbmx3QHKiJw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AThirukandathil\\source\\repos\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AThirukandathil\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\AThirukandathil\\.nuget\\packages\\xamarin.forms.inputkit\\3.7.2\\xamarin.forms.inputkit.3.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}

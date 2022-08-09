@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="MyCoffeeApp.Views.MyStoredCoffeePage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:MyCoffeeApp.ViewModels"
+             xmlns:model="clr-namespace:MyCoffeeApp.Models"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:DataType="viewmodels:MyCoffeeViewModel"
+             x:Name="MyCoffeePage"
+             BackgroundColor="{AppThemeBinding Dark=Black, Light=White}">
+    <ContentPage.BindingContext>
+        <viewmodels:MyCoffeeViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xct:ItemSelectedEventArgsConverter x:Key="ItemSelectedEventArgsConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding AddCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <ListView CachingStrategy="RecycleElement"
+              HasUnevenRows="True"
+              SeparatorVisibility="None"
+              IsPullToRefreshEnabled="True"
+              IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+              RefreshCommand="{Binding RefreshCommand}"
+              ItemsSource="{Binding Coffee}"
+              RefreshControlColor="Blue"
+              BackgroundColor="Transparent"
+              SelectionMode="Single">
+        <ListView.Behaviors>
+            <xct:EventToCommandBehavior
+                EventName="ItemSelected"
+                Command="{Binding SelectedCommand}"                
+                EventArgsConverter="{StaticResource ItemSelectedEventArgsConverter}"/>
+        </ListView.Behaviors>
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="model:Coffee">
+                <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem Text="Delete" 
+                                  Command="{Binding 
+                            Source={x:Reference MyCoffeePage},
+                            Path=BindingContext.RemoveCommand}"
+                                  CommandParameter="{Binding .}"
+                                  IsDestructive="True"/>
+                    </ViewCell.ContextActions>
+                    <Grid Padding="10">
+                        <Frame CornerRadius="20"
+                               HasShadow="True">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Image}"
+                                       WidthRequest="66"/>
+                                <StackLayout VerticalOptions="Center">
+                                    <Label VerticalOptions="Center"
+                                           FontSize="Large"
+                                           Text="{Binding Name}"/>
+                                    <Label VerticalOptions="Center"
+                                           FontSize="Large"
+                                           Text="{Binding Roaster}"/>
+                                    <Label VerticalOptions="Center"
+                                           FontSize="Small"
+                                           Text="{Binding Id}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        
+    </ListView>
+</ContentPage>

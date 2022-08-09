@@ -47,7 +47,7 @@ namespace MyCoffeeApp.Droid
             var activity = Platform.CurrentActivity;
             var window = activity.Window;
 
-            //this may not be necessary(but may be fore older than M)
+           
             window.AddFlags(Android.Views.WindowManagerFlags.DrawsSystemBarBackgrounds);
             window.ClearFlags(Android.Views.WindowManagerFlags.TranslucentStatus);
             window.SetStatusBarColor(color.ToPlatformColor());

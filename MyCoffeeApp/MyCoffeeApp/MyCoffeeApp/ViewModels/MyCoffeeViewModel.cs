@@ -28,6 +28,7 @@ namespace MyCoffeeApp.ViewModels
             AddCommand = new AsyncCommand(Add);
             RemoveCommand = new AsyncCommand<Coffee>(Remove);
             SelectedCommand = new AsyncCommand<Coffee>(Selected);
+        }
 
             async Task Add()
             {
@@ -62,7 +63,7 @@ namespace MyCoffeeApp.ViewModels
                 Coffee.AddRange(coffees);
                 IsBusy = false;
             }
-        }
+        
 
     }
 }

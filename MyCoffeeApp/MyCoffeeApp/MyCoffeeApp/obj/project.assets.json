@@ -5483,23 +5483,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AThirukandathil\\.nuget\\packages\\": {},
+    "C:\\Users\\athirukandathil\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AThirukandathil\\source\\repos\\MyCoffeeApp\\MyCoffeeApp\\MyCoffeeApp\\MyCoffeeApp.csproj",
+      "projectUniqueName": "F:\\Xamarin\\Xamarin\\MyCoffeeApp\\MyCoffeeApp\\MyCoffeeApp\\MyCoffeeApp.csproj",
       "projectName": "MyCoffeeApp",
-      "projectPath": "C:\\Users\\AThirukandathil\\source\\repos\\MyCoffeeApp\\MyCoffeeApp\\MyCoffeeApp\\MyCoffeeApp.csproj",
-      "packagesPath": "C:\\Users\\AThirukandathil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AThirukandathil\\source\\repos\\MyCoffeeApp\\MyCoffeeApp\\MyCoffeeApp\\obj\\",
+      "projectPath": "F:\\Xamarin\\Xamarin\\MyCoffeeApp\\MyCoffeeApp\\MyCoffeeApp\\MyCoffeeApp.csproj",
+      "packagesPath": "C:\\Users\\athirukandathil\\.nuget\\packages\\",
+      "outputPath": "F:\\Xamarin\\Xamarin\\MyCoffeeApp\\MyCoffeeApp\\MyCoffeeApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\AThirukandathil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\athirukandathil\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

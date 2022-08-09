@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AThirukandathil\\source\\repos\\MyCoffeeApp.WebAPI\\MyCoffeeApp.WebAPI.csproj": {}
+    "F:\\Xamarin\\Xamarin\\MyCoffeeApp.WebAPI\\MyCoffeeApp.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AThirukandathil\\source\\repos\\MyCoffeeApp.WebAPI\\MyCoffeeApp.WebAPI.csproj": {
+    "F:\\Xamarin\\Xamarin\\MyCoffeeApp.WebAPI\\MyCoffeeApp.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AThirukandathil\\source\\repos\\MyCoffeeApp.WebAPI\\MyCoffeeApp.WebAPI.csproj",
+        "projectUniqueName": "F:\\Xamarin\\Xamarin\\MyCoffeeApp.WebAPI\\MyCoffeeApp.WebAPI.csproj",
         "projectName": "MyCoffeeApp.WebAPI",
-        "projectPath": "C:\\Users\\AThirukandathil\\source\\repos\\MyCoffeeApp.WebAPI\\MyCoffeeApp.WebAPI.csproj",
-        "packagesPath": "C:\\Users\\AThirukandathil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AThirukandathil\\source\\repos\\MyCoffeeApp.WebAPI\\obj\\",
+        "projectPath": "F:\\Xamarin\\Xamarin\\MyCoffeeApp.WebAPI\\MyCoffeeApp.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\athirukandathil\\.nuget\\packages\\",
+        "outputPath": "F:\\Xamarin\\Xamarin\\MyCoffeeApp.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\AThirukandathil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\athirukandathil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AThirukandathil\\source\\repos\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.iOS\\MonkeyFinder.iOS.csproj": {}
+    "F:\\Xamarin\\Xamarin\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.iOS\\MonkeyFinder.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AThirukandathil\\source\\repos\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.iOS\\MonkeyFinder.iOS.csproj": {
+    "F:\\Xamarin\\Xamarin\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.iOS\\MonkeyFinder.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AThirukandathil\\source\\repos\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.iOS\\MonkeyFinder.iOS.csproj",
+        "projectUniqueName": "F:\\Xamarin\\Xamarin\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.iOS\\MonkeyFinder.iOS.csproj",
         "projectName": "MonkeyFinder.iOS",
-        "projectPath": "C:\\Users\\AThirukandathil\\source\\repos\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.iOS\\MonkeyFinder.iOS.csproj",
-        "packagesPath": "C:\\Users\\AThirukandathil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AThirukandathil\\source\\repos\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.iOS\\obj\\",
+        "projectPath": "F:\\Xamarin\\Xamarin\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.iOS\\MonkeyFinder.iOS.csproj",
+        "packagesPath": "C:\\Users\\athirukandathil\\.nuget\\packages\\",
+        "outputPath": "F:\\Xamarin\\Xamarin\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\AThirukandathil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\athirukandathil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\AThirukandathil\\source\\repos\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.csproj": {
-                "projectPath": "C:\\Users\\AThirukandathil\\source\\repos\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.csproj"
+              "F:\\Xamarin\\Xamarin\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.csproj": {
+                "projectPath": "F:\\Xamarin\\Xamarin\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.csproj"
               }
             }
           }
@@ -65,20 +65,20 @@
         }
       }
     },
-    "C:\\Users\\AThirukandathil\\source\\repos\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.csproj": {
+    "F:\\Xamarin\\Xamarin\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AThirukandathil\\source\\repos\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.csproj",
+        "projectUniqueName": "F:\\Xamarin\\Xamarin\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.csproj",
         "projectName": "MonkeyFinder",
-        "projectPath": "C:\\Users\\AThirukandathil\\source\\repos\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.csproj",
-        "packagesPath": "C:\\Users\\AThirukandathil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AThirukandathil\\source\\repos\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder\\obj\\",
+        "projectPath": "F:\\Xamarin\\Xamarin\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder.csproj",
+        "packagesPath": "C:\\Users\\athirukandathil\\.nuget\\packages\\",
+        "outputPath": "F:\\Xamarin\\Xamarin\\MonkeyFinder\\MonkeyFinder\\MonkeyFinder\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\AThirukandathil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\athirukandathil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

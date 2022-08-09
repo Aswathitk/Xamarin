@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "r2V0vEFlBIE3jDqNfb1lCvQI4PVz6o/cgRQX42ita8sZolE4miIY+sIXNSMXRFMZbsVgdWtDENTfN3ih+j5MZA==",
+  "dgSpecHash": "TWYJOQV+5UB1vu/oExk2JbRQeCbtUbe+Yuu1lB+W0qjv44nG4LywYq+Uc1GoC1OlPuvRBwMckzLcng7y/nvCXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AThirukandathil\\source\\repos\\MyCoffeeApp.WebAPI\\MyCoffeeApp.WebAPI.csproj",
+  "projectFilePath": "F:\\Xamarin\\Xamarin\\MyCoffeeApp.WebAPI\\MyCoffeeApp.WebAPI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\AThirukandathil\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
-    "C:\\Users\\AThirukandathil\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
-    "C:\\Users\\AThirukandathil\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
-    "C:\\Users\\AThirukandathil\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
-    "C:\\Users\\AThirukandathil\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
-    "C:\\Users\\AThirukandathil\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+    "C:\\Users\\athirukandathil\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\athirukandathil\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "C:\\Users\\athirukandathil\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\athirukandathil\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\athirukandathil\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "C:\\Users\\athirukandathil\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }

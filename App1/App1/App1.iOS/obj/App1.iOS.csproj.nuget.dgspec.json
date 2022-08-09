@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AThirukandathil\\source\\repos\\App1\\App1\\App1.iOS\\App1.iOS.csproj": {}
+    "F:\\Xamarin\\Xamarin\\App1\\App1\\App1.iOS\\App1.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AThirukandathil\\source\\repos\\App1\\App1\\App1.iOS\\App1.iOS.csproj": {
+    "F:\\Xamarin\\Xamarin\\App1\\App1\\App1.iOS\\App1.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AThirukandathil\\source\\repos\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
+        "projectUniqueName": "F:\\Xamarin\\Xamarin\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
         "projectName": "App1.iOS",
-        "projectPath": "C:\\Users\\AThirukandathil\\source\\repos\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
-        "packagesPath": "C:\\Users\\AThirukandathil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AThirukandathil\\source\\repos\\App1\\App1\\App1.iOS\\obj\\",
+        "projectPath": "F:\\Xamarin\\Xamarin\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
+        "packagesPath": "C:\\Users\\athirukandathil\\.nuget\\packages\\",
+        "outputPath": "F:\\Xamarin\\Xamarin\\App1\\App1\\App1.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\AThirukandathil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\athirukandathil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\AThirukandathil\\source\\repos\\App1\\App1\\App1\\App1.csproj": {
-                "projectPath": "C:\\Users\\AThirukandathil\\source\\repos\\App1\\App1\\App1\\App1.csproj"
+              "F:\\Xamarin\\Xamarin\\App1\\App1\\App1\\App1.csproj": {
+                "projectPath": "F:\\Xamarin\\Xamarin\\App1\\App1\\App1\\App1.csproj"
               }
             }
           }
@@ -65,20 +65,20 @@
         }
       }
     },
-    "C:\\Users\\AThirukandathil\\source\\repos\\App1\\App1\\App1\\App1.csproj": {
+    "F:\\Xamarin\\Xamarin\\App1\\App1\\App1\\App1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AThirukandathil\\source\\repos\\App1\\App1\\App1\\App1.csproj",
+        "projectUniqueName": "F:\\Xamarin\\Xamarin\\App1\\App1\\App1\\App1.csproj",
         "projectName": "App1",
-        "projectPath": "C:\\Users\\AThirukandathil\\source\\repos\\App1\\App1\\App1\\App1.csproj",
-        "packagesPath": "C:\\Users\\AThirukandathil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AThirukandathil\\source\\repos\\App1\\App1\\App1\\obj\\",
+        "projectPath": "F:\\Xamarin\\Xamarin\\App1\\App1\\App1\\App1.csproj",
+        "packagesPath": "C:\\Users\\athirukandathil\\.nuget\\packages\\",
+        "outputPath": "F:\\Xamarin\\Xamarin\\App1\\App1\\App1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\AThirukandathil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\athirukandathil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

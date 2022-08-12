@@ -29,7 +29,9 @@ namespace MyCoffeeApp.ViewModels
             AddCommand = new AsyncCommand(Add);
             RemoveCommand = new AsyncCommand<Coffee>(Remove);
             SelectedCommand = new AsyncCommand<Coffee>(Selected);
+
             coffeeService = DependencyService.Get<ICoffeeService>();
+
 
         }
             async Task Add()
@@ -66,7 +68,9 @@ namespace MyCoffeeApp.ViewModels
             IsBusy = false;
             DependencyService.Get<IToast>()?.MakeToast("Refreshed!");
             }
+
        
+
 
     }
 }

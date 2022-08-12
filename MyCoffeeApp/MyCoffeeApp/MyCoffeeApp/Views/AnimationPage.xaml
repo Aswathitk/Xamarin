@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyCoffeeApp.Views.AnimationPage"
+             xmlns:viewmodels="clr-namespace:MyCoffeeApp.ViewModels">
+    <ContentPage.BindingContext>
+        <viewmodels:ImageCacheViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <Button Text="Animate" IsEnabled="{Binding IsNotBusy}" Command="{Binding RefreshLongCommand}"/>
+        <Label Text="{StaticResource Spinner}"
+           FontFamily="FAS"
+               IsVisible="{Binding IsBusy}"
+               x:Name="LabelLoad"
+               FontSize="Large"
+           HorizontalOptions="Center"/>
+    </StackLayout>
+    
+</ContentPage>

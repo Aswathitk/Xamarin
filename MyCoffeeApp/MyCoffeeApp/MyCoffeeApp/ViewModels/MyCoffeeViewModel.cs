@@ -19,6 +19,7 @@ namespace MyCoffeeApp.ViewModels
         public AsyncCommand<Coffee> RemoveCommand { get; }
         public AsyncCommand<Coffee> SelectedCommand { get; }
 
+        ICoffeeService coffeeService;
         public MyCoffeeViewModel()
         {
             string Title = "MyCoffeeApp";
@@ -28,7 +29,9 @@ namespace MyCoffeeApp.ViewModels
             AddCommand = new AsyncCommand(Add);
             RemoveCommand = new AsyncCommand<Coffee>(Remove);
             SelectedCommand = new AsyncCommand<Coffee>(Selected);
+            coffeeService = DependencyService.Get<ICoffeeService>();
 
+        }
             async Task Add()
             {
                 //var name = await App.Current.MainPage.DisplayPromptAsync("Name", "Name of Coffee");
@@ -49,20 +52,21 @@ namespace MyCoffeeApp.ViewModels
 
             async Task Remove(Coffee coffee)
             {
-                await CoffeeService.RemoveCoffee(coffee.Id);
+                await coffeeService.RemoveCoffee(coffee.Id);
                 await Refresh();
             }
 
             async Task Refresh()
             {
-                IsBusy = true;
-                await Task.Delay(2000);
-                Coffee.Clear();
-                var coffees = await CoffeeService.GetCoffee();
-                Coffee.AddRange(coffees);
-                IsBusy = false;
+            IsBusy = true;
+            await Task.Delay(2000);
+            Coffee.Clear();
+            var coffees = await coffeeService.GetCoffee();
+            Coffee.AddRange(coffees);
+            IsBusy = false;
+            DependencyService.Get<IToast>()?.MakeToast("Refreshed!");
             }
-        }
+       
 
     }
 }

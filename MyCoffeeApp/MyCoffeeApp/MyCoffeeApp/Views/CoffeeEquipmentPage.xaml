@@ -7,6 +7,8 @@
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              xmlns:model="clr-namespace:MyCoffeeApp.Models"
              x:DataType="viewmodels:CoffeeEquipmentViewModel"
+             xmlns:fontAwesome="clr-namespace:FontAwesome" 
+             xmlns:cells="clr-namespace:MyCoffeeApp.Cells"
              x:Name="CoffeePage"
              BackgroundColor="{AppThemeBinding Dark=Black, Light=White}">
     <ContentPage.BindingContext>
@@ -28,12 +30,10 @@
               ItemsSource="{Binding CoffeeGroups}"
               IsGroupingEnabled="True"
               GroupDisplayBinding="{Binding Key}"
-              HasUnevenRows="True"
-              SeparatorVisibility="None"
-              IsPullToRefreshEnabled="True"
+              SeparatorColor="Red"
               IsRefreshing="{Binding IsBusy, Mode=OneWay}"
               RefreshCommand="{Binding RefreshCommand}"
-              RefreshControlColor="{StaticResource RefreshColor}">
+              Style="{StaticResource CoffeeListView}">
         <ListView.Behaviors>
             <xct:EventToCommandBehavior
                 EventName="ItemSelected"
@@ -51,35 +51,19 @@
                                   CommandParameter="{Binding .}"/>
                         <MenuItem Text="Delete"/>
                     </ViewCell.ContextActions>
-                    <Grid Padding="10">
-                        <Frame CornerRadius="20"
-                               HasShadow="True">
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="{Binding Image}"
-                                       WidthRequest="66"/>
-                                <StackLayout>
-                                    <Label VerticalOptions="Center"
-                                           FontSize="Large"
-                                           Text="{Binding Name}"/>
-                                    <Label VerticalOptions="Center"
-                                           FontSize="Large"
-                                           Text="{Binding Roaster}"/>
-                                </StackLayout>
-                                <Button Text="Favourite" HorizontalOptions="End"
-                                        Command="{Binding Source={RelativeSource 
-                                        AncestorType={x:Type viewmodels:CoffeeEquipmentViewModel}},
-                                    Path= FavouriteCommand}"
-                                        CommandParameter="{Binding .}"/>
-                            </StackLayout>
-                        </Frame>
-                    </Grid>
+                    <cells:CoffeeCard/>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
         <ListView.Header>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Label Text="Coffees of The World"
-                       FontSize="Caption"/>
+                <Label Text="Coffees of the World"
+                       TextColor="{AppThemeBinding 
+                                    Dark=White, 
+                                    Light=Black}"
+                       FontFamily="FAS"
+                       FontSize="Large"
+                       Margin="20"/>
             </StackLayout>
         </ListView.Header>
         <ListView.Footer>

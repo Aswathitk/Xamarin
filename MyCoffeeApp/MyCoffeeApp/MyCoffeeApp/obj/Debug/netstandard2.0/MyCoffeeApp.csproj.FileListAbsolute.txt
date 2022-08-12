@@ -46,3 +46,7 @@ F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp\obj\Debug\netstandard2.0\
 F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp\obj\Debug\netstandard2.0\MyCoffeeApp.dll
 F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp\obj\Debug\netstandard2.0\ref\MyCoffeeApp.dll
 F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp\obj\Debug\netstandard2.0\MyCoffeeApp.pdb
+F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp\obj\Debug\netstandard2.0\Cells\CoffeeCard.xaml.g.cs
+F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp\obj\Debug\netstandard2.0\Cells\SpecialCell.xaml.g.cs
+F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp\obj\Debug\netstandard2.0\Views\ImageCachePage.xaml.g.cs
+F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp\obj\Debug\netstandard2.0\Views\AnimationPage.xaml.g.cs

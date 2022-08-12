@@ -6,7 +6,8 @@
 	    xmlns:viewmodels="clr-namespace:MyCoffeeApp.ViewModels"
         xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
 	    x:Name="CoffeePage"
-        BackgroundColor="White">
+        BackgroundColor="White"
+        xmlns:cells="clr-namespace:MyCoffeeApp.Cells">
     <ContentPage.BindingContext>
         <viewmodels:CoffeeEquipmentViewModel />
     </ContentPage.BindingContext>
@@ -45,8 +46,10 @@
                             <SwipeItems>
                                 <SwipeItem
                                     BackgroundColor="Orange"
-                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:CoffeeEquipmentViewModel}}, Path=FavoriteCommand}"
-                                    CommandParameter="{Binding .}"
+                                    Command="{Binding Source={RelativeSource 
+                                        AncestorType={x:Type viewmodels:CoffeeEquipmentViewModel}},
+                                        Path= FavouriteCommand}"
+                                        CommandParameter="{Binding .}"
                                     Text="Favorite" />
                                 <SwipeItem
                                     BackgroundColor="Red"
@@ -54,6 +57,18 @@
                                     Text="Delete" />
                             </SwipeItems>
                         </SwipeView.RightItems>
+                        <cells:CoffeeCard/>
+                        <!--   <Grid Padding="10">
+                            <Frame Style="{StaticResource CoffeeCard}">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding Image}" WidthRequest="60"/>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label Text="{Binding Name}"/>
+                                        <Label Text="{Binding Roaster}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>  -->
                     </SwipeView>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

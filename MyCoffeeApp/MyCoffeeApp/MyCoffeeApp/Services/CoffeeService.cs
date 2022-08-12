@@ -1,4 +1,5 @@
 ﻿using MyCoffeeApp.Models;
+using MyCoffeeApp.Services;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -6,20 +7,22 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
+using Xamarin.Forms;
 
+[assembly:Dependency(typeof(CoffeeService))]
 namespace MyCoffeeApp.Services
 {
-    public static class CoffeeService
+    public class CoffeeService : ICoffeeService
     {
-        static SQLiteAsyncConnection db;
-        static async Task init()
+        SQLiteAsyncConnection db;
+        async Task init()
         {
             var databasePath = Path.Combine(FileSystem.AppDataDirectory, "Mydata.db");
             db = new SQLiteAsyncConnection(databasePath);
             await db.CreateTableAsync<Coffee>();
         }
 
-        public static async Task AddCoffee(string name, string roaster)
+        public async Task AddCoffee(string name, string roaster)
         {
             await init();
             string image = "https://images.prismic.io/yesplz/f4dd8d9e-fb65-46da-8a29-58e667250fdf_194label1.jpg?auto=compress,format";
@@ -31,23 +34,23 @@ namespace MyCoffeeApp.Services
             };
             await db.InsertAsync(coffee);
         }
-        public static async Task RemoveCoffee(int id)
+        public async Task RemoveCoffee(int id)
         {
             await init();
             await db.DeleteAsync<Coffee>(id);
         }
 
-        public static async Task<IEnumerable<Coffee>> GetCoffee()
+        public async Task<IEnumerable<Coffee>> GetCoffee()
         {
             await init();
-            var coffee =  await db.Table<Coffee>().ToListAsync();
+            var coffee = await db.Table<Coffee>().ToListAsync();
             return coffee;
         }
 
-        public static async Task<Coffee> GetCoffee(int id)
+        public async Task<Coffee> GetCoffee(int id)
         {
             await init();
-            var coffee = await db.Table<Coffee>().FirstOrDefaultAsync(c=>c.Id==id);
+            var coffee = await db.Table<Coffee>().FirstOrDefaultAsync(c => c.Id == id);
             return coffee;
         }
     }

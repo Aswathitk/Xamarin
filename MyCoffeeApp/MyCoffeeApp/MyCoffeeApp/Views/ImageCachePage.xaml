@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyCoffeeApp.Views.ImageCachePage"
+             xmlns:viewmodels="clr-namespace:MyCoffeeApp.ViewModels"
+             x:DataType="viewmodels:ImageCacheViewModel">
+    <ContentPage.BindingContext>
+        <viewmodels:ImageCacheViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Refresh" Command="{Binding RefreshCommand}"/>
+    </ContentPage.ToolbarItems>
+    
+    <Image Aspect="AspectFit"
+           WidthRequest="335"
+           HeightRequest="209"
+           Source="{Binding Image}"/>
+</ContentPage>

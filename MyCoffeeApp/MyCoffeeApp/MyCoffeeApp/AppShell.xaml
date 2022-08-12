@@ -83,19 +83,46 @@
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/>
     </ShellItem>
 
-    <FlyoutItem Title="Equipment" Icon="icon_about.png">
+    <FlyoutItem Title="Equipment">
+        <FlyoutItem.FlyoutIcon>
+            <FontImageSource FontFamily="FAS" Glyph="{StaticResource CoffeeIcon}" Color="Black"/>
+        </FlyoutItem.FlyoutIcon>
         <ShellContent Route="CoffeeEquipmentPage" ContentTemplate="{DataTemplate local:CoffeeEquipmentPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="EquipmentCV" Icon="icon_about.png">
+    <FlyoutItem Title="EquipmentCV">
+        <FlyoutItem.FlyoutIcon>
+            <FontImageSource FontFamily="FAS" Glyph="{StaticResource CoffeeIconCV}" Color="Black"/>
+        </FlyoutItem.FlyoutIcon>
         <ShellContent ContentTemplate="{DataTemplate local:CoffeeEquipmentCVPage}" Route="CoffeeEquipmentCVPage" />
     </FlyoutItem>
-    <FlyoutItem Title="My Coffee" Icon="icon_about.png">
+    <FlyoutItem Title="My Coffee">
+        <FlyoutItem.FlyoutIcon>
+            <FontImageSource FontFamily="FAS" Glyph="{StaticResource MyCoffee}" Color="Black"/>
+        </FlyoutItem.FlyoutIcon>
         <ShellContent ContentTemplate="{DataTemplate local:MyStoredCoffeePage}" Route="MyStoredCoffeePage" />
     </FlyoutItem>
-    <FlyoutItem Title="Internet Coffee" Icon="icon_about.png">
+    <FlyoutItem Title="Internet Coffee">
+        <FlyoutItem.FlyoutIcon>
+            <FontImageSource FontFamily="FAS" Glyph="{StaticResource InternetCoffee}" Color="Black"/>
+        </FlyoutItem.FlyoutIcon>
         <ShellContent ContentTemplate="{DataTemplate local:InternetCoffeePage}" Route="InternetCoffeePage" />
     </FlyoutItem>
-    <FlyoutItem Title="Settings" Icon="icon_about.png">
+    <FlyoutItem Title="Image Cache">
+        <FlyoutItem.FlyoutIcon>
+            <FontImageSource FontFamily="FAS" Glyph="{StaticResource Setting}" Color="Black"/>
+        </FlyoutItem.FlyoutIcon>
+        <ShellContent ContentTemplate="{DataTemplate local:ImageCachePage}" Route="ImagePage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Animate">
+        <FlyoutItem.FlyoutIcon>
+            <FontImageSource FontFamily="FAS" Glyph="{StaticResource Spinner}" Color="Black"/>
+        </FlyoutItem.FlyoutIcon>
+        <ShellContent ContentTemplate="{DataTemplate local:AnimationPage}" Route="ImagePage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Settings">
+        <FlyoutItem.FlyoutIcon>
+            <FontImageSource FontFamily="FAS" Glyph="{StaticResource Setting}" Color="Black"/>
+        </FlyoutItem.FlyoutIcon>
         <ShellContent ContentTemplate="{DataTemplate local:SettingsPage}" Route="SettingsPage" />
     </FlyoutItem>
 

@@ -1,4 +1,5 @@
 ﻿using MyCoffeeApp.Helpers;
+using MyCoffeeApp.Services;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -12,6 +13,7 @@ namespace MyCoffeeApp
             TheTheme.SetTheme();
             InitializeComponent();
             MainPage = new AppShell();
+          //  DependencyService.Register<ICoffeeService,CoffeeService>();
         }
 
         protected override void OnStart()

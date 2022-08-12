@@ -12,7 +12,7 @@ namespace MyCoffeeApp.Services
     class InternetCoffeeService
     {
         static string Baseurl = DeviceInfo.Platform == DevicePlatform.Android ?
-            "http://10.0.2.2:44313" : "http://localhost:5000";
+            "https://10.0.2.2:44313" : "http://localhost:5000";
 
         static HttpClient client;
         

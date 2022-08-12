@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyCoffeeApp.Cells.CoffeeCard"
+             xmlns:models="clr-namespace:MyCoffeeApp.Models"
+             xmlns:viewmodels="clr-namespace:MyCoffeeApp.ViewModels"
+             x:DataType="models:Coffee"
+             Padding="10">
+    <Frame Style="{StaticResource CoffeeCard}">
+        <StackLayout Orientation="Horizontal">
+            <Image Source="{Binding Image}"
+                                       WidthRequest="66"/>
+            <StackLayout>
+                <Label VerticalOptions="Center"
+                                           FontSize="Large"
+                                           Text="{Binding Name}"/>
+                <Label VerticalOptions="Center"
+                                           FontSize="Large"
+                                           Text="{Binding Roaster}"/>
+            </StackLayout>
+            <Button Text="Favourite" HorizontalOptions="End"
+                                        Command="{Binding Source={RelativeSource 
+                                        AncestorType={x:Type viewmodels:CoffeeEquipmentViewModel}},
+                                        Path= FavouriteCommand}"
+                                        CommandParameter="{Binding .}"/>
+        </StackLayout>
+    </Frame>
+</Grid>

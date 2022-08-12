@@ -14,17 +14,19 @@ namespace MyCoffeeApp.ViewModels
         public string Name { get => name; set => SetProperty(ref name, value); }
         public string Roaster { get => roaster; set => SetProperty(ref roaster, value); }
         public AsyncCommand SaveCommand { set; get; }
+        ICoffeeService coffeeService;
         public AddMyCoffeeViewModel()
         {
             Title = "Add Coffee";
             SaveCommand = new AsyncCommand(save);
+            coffeeService = DependencyService.Get<ICoffeeService>();
         }
 
         public async Task save()
         {
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(roaster))
                 return;
-            await CoffeeService.AddCoffee(name, roaster);
+            await coffeeService.AddCoffee(name, roaster);
             await Shell.Current.GoToAsync("..");
         }
     }

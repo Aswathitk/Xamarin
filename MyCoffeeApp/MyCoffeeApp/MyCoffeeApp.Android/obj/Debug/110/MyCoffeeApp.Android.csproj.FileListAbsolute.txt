@@ -1312,3 +1312,6 @@ F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp.Android\obj\Debug\110\sta
 F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp.Android\bin\Debug\Xamarin.iOS.dll
+F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp.Android\bin\Debug\Xamarin.iOS.xml
+F:\Xamarin\Xamarin\MyCoffeeApp\MyCoffeeApp\MyCoffeeApp.Android\obj\Debug\110\android\assets\Xamarin.iOS.dll

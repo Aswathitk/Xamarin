@@ -23,15 +23,11 @@
     </ContentPage.ToolbarItems>
 
     <ListView CachingStrategy="RecycleElement"
-              HasUnevenRows="True"
-              SeparatorVisibility="None"
-              IsPullToRefreshEnabled="True"
               IsRefreshing="{Binding IsBusy, Mode=OneWay}"
               RefreshCommand="{Binding RefreshCommand}"
               ItemsSource="{Binding Coffee}"
-              RefreshControlColor="Blue"
-              BackgroundColor="Transparent"
-              SelectionMode="Single">
+              SelectionMode="Single"
+              Style="{StaticResource CoffeeListView}">
         <ListView.Behaviors>
             <xct:EventToCommandBehavior
                 EventName="ItemSelected"
@@ -50,8 +46,7 @@
                                   IsDestructive="True"/>
                     </ViewCell.ContextActions>
                     <Grid Padding="10">
-                        <Frame CornerRadius="20"
-                               HasShadow="True">
+                        <Frame Style="{StaticResource CoffeeCard}">
                             <StackLayout Orientation="Horizontal">
                                 <Image Source="{Binding Image}"
                                        WidthRequest="66"/>

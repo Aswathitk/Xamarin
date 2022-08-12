@@ -9,7 +9,28 @@
         <ResourceDictionary>
             <Color x:Key="Primary">#2196F3</Color>
             <Color x:Key="RefreshColor">Orange</Color>
-            
+
+            <Style x:Key="CoffeeListView" TargetType="ListView">
+                <Setter Property="HasUnevenRows" Value="True"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="SeparatorVisibility"
+                        Value="None"/>
+                <Setter Property="RefreshControlColor"
+                        Value="{StaticResource RefreshColor}"/>
+                <Setter Property="IsPullToRefreshEnabled"
+                        Value="True"/>
+            </Style>
+            <Style x:Key="CoffeeCard" TargetType="Frame">
+                <Setter Property="CornerRadius" Value="{OnPlatform Android=20,iOS=22}"/>
+                <Setter Property="HasShadow" Value="True"/>
+            </Style> 
+
+            <x:String x:Key="CoffeeIconCV">&#xf7b6;</x:String>
+            <x:String x:Key="MyCoffee">&#xf004;</x:String>
+            <x:String x:Key="CoffeeIcon">&#xf0f4;</x:String>
+            <x:String x:Key="Setting">&#xf013;</x:String> 
+            <x:String x:Key="InternetCoffee">&#xf1eb;</x:String>
+            <x:String x:Key="Spinner">&#xf110;</x:String>
         </ResourceDictionary>        
     </Application.Resources>
 </Application>
